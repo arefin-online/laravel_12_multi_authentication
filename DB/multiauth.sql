@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 19, 2025 at 03:01 AM
+-- Generation Time: Apr 19, 2025 at 03:35 AM
 -- Server version: 8.0.40
 -- PHP Version: 8.3.14
 
@@ -43,7 +43,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `name`, `email`, `photo`, `password`, `token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin@gmail.com', NULL, '$2y$12$AzNwp9GUNCKldEECxl2tcuY47f.cE4/C8dkkba0F9wutn0C1.XJZa', '', '2025-04-18 07:07:42', '2025-04-18 19:55:51');
+(1, 'Morshedul Arefin', 'admin@gmail.com', 'admin_1745033547.jpg', '$2y$12$RMvL1soIF/58syQO2naEKumblTaG8XvXySq2ruAlUpgH5H/7XnBfO', '', '2025-04-18 07:07:42', '2025-04-18 21:33:00');
 
 -- --------------------------------------------------------
 
@@ -174,9 +174,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('Fd02V89NoA7r1UYpMmo60mWsRWS5aqt0nHypCm4m', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiR1JjSlFwRUdlUUNKMjRaZHZ1NnlXR0dBQmpFR2pvbmRITE1Na1BRMSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9kYXNoYm9hcmQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1745023728),
-('lLww1emSkhvwdZ6tXW17Psvo1siPqWcFD7sClxaE', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiY2FXRFZSWXNrdXRJamlvVmhsVjlDYVV4TnhrSVBTRDJBU2hsZHIyNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1745031638),
-('ZOvbQiOolRd3HPO1e4cL6KBmFTJvYD5OQ3UKT7un', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQUVPWWdQVThhVHFvRlFKRXR2Z2JaTVZzb2pkalpHR21MaDlVQ28xYSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1745023728);
+('jxSJVJ3NUe823voXt5c6cE6mll4Nohzd9XWQHVmY', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiY2FXRFZSWXNrdXRJamlvVmhsVjlDYVV4TnhrSVBTRDJBU2hsZHIyNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1745033592);
 
 -- --------------------------------------------------------
 
@@ -207,8 +205,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `photo`, `password`, `phone`, `address`, `country`, `state`, `city`, `zip`, `token`, `status`, `created_at`, `updated_at`) VALUES
-(2, 'Smith', 'smith@gmail.com', NULL, '$2y$12$wwstce7Nc.1.YGMpuMJryuSMsJyQAKHXd2VrlmmM3E5MxtSEoDJAm', NULL, NULL, NULL, NULL, NULL, NULL, '', '1', '2025-04-18 20:31:03', '2025-04-18 20:59:36'),
-(3, 'David', 'david@gmail.com', NULL, '$2y$12$L4PXkkzwQFFiBhtEJ1v3..1Dgej0w2LbkVrMOy.hQn.cGn/NxEK4K', NULL, NULL, NULL, NULL, NULL, NULL, '', '1', '2025-04-18 20:33:17', '2025-04-18 20:33:34');
+(2, 'Smith Cooper', 'smith@gmail.com', 'user_1745033065.jpg', '$2y$12$IYaJn9FLquE02f61Z2Yhb.C93/1CJgYzisur5ZNIIaH1Yl6aJ6/em', '111-222-3333', '45 Street', 'USA', 'CA', 'NYC', '91283', '', '1', '2025-04-18 20:31:03', '2025-04-18 21:24:25'),
+(3, 'David', 'david@gmail.com', 'user_1745033086.jpg', '$2y$12$L4PXkkzwQFFiBhtEJ1v3..1Dgej0w2LbkVrMOy.hQn.cGn/NxEK4K', NULL, NULL, NULL, NULL, NULL, NULL, '', '1', '2025-04-18 20:33:17', '2025-04-18 21:24:46');
 
 --
 -- Indexes for dumped tables

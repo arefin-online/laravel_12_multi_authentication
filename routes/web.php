@@ -12,6 +12,8 @@ Route::get('/about', [FrontController::class, 'about'])->name('about');
 // User
 Route::middleware('auth')->group(function(){
     Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard');
+    Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+    Route::post('/profile', [UserController::class, 'profile_submit'])->name('profile_submit');
 });
 Route::get('/registration', [UserController::class, 'registration'])->name('registration');
 Route::post('/registration', [UserController::class, 'registration_submit'])->name('registration_submit');
@@ -29,6 +31,8 @@ Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 // Admin
 Route::middleware('admin')->prefix('admin')->group(function(){
     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin_dashboard');
+    Route::get('/profile', [AdminController::class, 'profile'])->name('admin_profile');
+    Route::post('/profile', [AdminController::class, 'profile_submit'])->name('admin_profile_submit');
 });
 
 Route::prefix('admin')->group(function(){

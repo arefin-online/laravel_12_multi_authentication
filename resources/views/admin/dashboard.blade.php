@@ -1,2 +1,5 @@
+@include('admin.top')
 <h2>Admin Dashboard</h2>
-<a href="{{ route('admin_logout') }}">Logout</a>
+<p>
+    Welcome to dashboard
+</p>

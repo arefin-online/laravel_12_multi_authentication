@@ -146,4 +146,51 @@ class UserController extends Controller
 
         return redirect()->route('login')->with('success', 'Password reset successfully');
     }
+
+    public function profile()
+    {
+        return view('user.profile');
+    }
+
+    public function profile_submit(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email,'.Auth::guard('web')->user()->id,
+        ]);
+
+        $user = User::where('id',Auth::guard('web')->user()->id)->first();
+
+        if($request->photo){
+            $request->validate([
+                'photo' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+            $final_name = 'user_'.time().'.'.$request->photo->extension();
+            if($user->photo != '') {
+                unlink(public_path('uploads/'.$user->photo));
+            }
+            $request->photo->move(public_path('uploads'), $final_name);
+            $user->photo = $final_name;
+        }
+
+        if($request->password){
+            $request->validate([
+                'password' => 'required',
+                'confirm_password' => 'required|same:password',
+            ]);
+            $user->password = Hash::make($request->password);
+        }
+        
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->address = $request->address;
+        $user->city = $request->city;
+        $user->state = $request->state;
+        $user->country = $request->country;
+        $user->zip = $request->zip;
+        $user->update();
+
+        return redirect()->back()->with('success', 'Profile updated successfully');
+    }
 }
