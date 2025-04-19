@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 19, 2025 at 02:38 AM
+-- Generation Time: Apr 19, 2025 at 03:01 AM
 -- Server version: 8.0.40
 -- PHP Version: 8.3.14
 
@@ -175,7 +175,7 @@ CREATE TABLE `sessions` (
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
 ('Fd02V89NoA7r1UYpMmo60mWsRWS5aqt0nHypCm4m', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiR1JjSlFwRUdlUUNKMjRaZHZ1NnlXR0dBQmpFR2pvbmRITE1Na1BRMSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9kYXNoYm9hcmQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1745023728),
-('Pj1PiaF7J5YUoB6aNIjTKdJBxklwgbuO09OhaWdn', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiY2FXRFZSWXNrdXRJamlvVmhsVjlDYVV4TnhrSVBTRDJBU2hsZHIyNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1745030033),
+('lLww1emSkhvwdZ6tXW17Psvo1siPqWcFD7sClxaE', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiY2FXRFZSWXNrdXRJamlvVmhsVjlDYVV4TnhrSVBTRDJBU2hsZHIyNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1745031638),
 ('ZOvbQiOolRd3HPO1e4cL6KBmFTJvYD5OQ3UKT7un', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQUVPWWdQVThhVHFvRlFKRXR2Z2JaTVZzb2pkalpHR21MaDlVQ28xYSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1745023728);
 
 -- --------------------------------------------------------
@@ -207,7 +207,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `photo`, `password`, `phone`, `address`, `country`, `state`, `city`, `zip`, `token`, `status`, `created_at`, `updated_at`) VALUES
-(2, 'Smith', 'smith@gmail.com', NULL, '$2y$12$JkQW6H6GzZZyhCp3c2WCJeZGZ6Nh292dkLdeOhfg7Bj0DtgIoKyta', NULL, NULL, NULL, NULL, NULL, NULL, '', '1', '2025-04-18 20:31:03', '2025-04-18 20:31:17'),
+(2, 'Smith', 'smith@gmail.com', NULL, '$2y$12$wwstce7Nc.1.YGMpuMJryuSMsJyQAKHXd2VrlmmM3E5MxtSEoDJAm', NULL, NULL, NULL, NULL, NULL, NULL, '', '1', '2025-04-18 20:31:03', '2025-04-18 20:59:36'),
 (3, 'David', 'david@gmail.com', NULL, '$2y$12$L4PXkkzwQFFiBhtEJ1v3..1Dgej0w2LbkVrMOy.hQn.cGn/NxEK4K', NULL, NULL, NULL, NULL, NULL, NULL, '', '1', '2025-04-18 20:33:17', '2025-04-18 20:33:34');
 
 --
